@@ -1,3 +1,4 @@
+### Initial Install ###
 I chose to install the minimal iso from centos.org's download page:
 
   [https://www.centos.org/download](https://www.centos.org/download)
@@ -17,3 +18,12 @@ By default, the system is not set to use Gnome Shell (the graphical login), you 
   $ sudo systemctl set-default graphical.target
 ```
 Now, just reboot to be presented with the graphical login.
+
+### Extra Repository ###
+I am adding the epel (extra packages for enterprise linux) with this command:
+```
+  sudo yum --enablerepo=extras install epel-release
+```
+
+
+
