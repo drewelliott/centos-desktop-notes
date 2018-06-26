@@ -12,3 +12,8 @@ To install gnome3, I did the following:
 ```
   $ sudo yum -y groupinstall "GNOME Desktop"
 ```
+By default, the system is not set to use Gnome Shell (the graphical login), you can change that through systemd:
+```
+  $ sudo systemctl set-default graphical.target
+```
+Now, just reboot to be presented with the graphical login.
